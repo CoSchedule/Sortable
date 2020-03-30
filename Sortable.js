@@ -1172,7 +1172,8 @@
   };
 
   var _checkOutsideTargetEl = function _checkOutsideTargetEl(evt) {
-    if (dragEl) {
+    // Real time can cause the original DOM to be destroyed
+    if (dragEl && dragEl.parentNode[expando]) {
       dragEl.parentNode[expando]._isOutsideThisEl(evt.target);
     }
   };
