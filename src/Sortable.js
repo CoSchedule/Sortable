@@ -1157,10 +1157,16 @@ Sortable.prototype = /** @lends Sortable.prototype */ {
 				dragOverEvent('revert');
 
 				if (!Sortable.eventCanceled) {
-					if (nextEl) {
-						rootEl.insertBefore(dragEl, nextEl);
-					} else {
-						rootEl.appendChild(dragEl);
+					try {
+						if (nextEl) {
+							rootEl.insertBefore(dragEl, nextEl);
+						} else {
+							rootEl.appendChild(dragEl);
+						}
+					} catch (e) {
+						// Do nothing
+						// This trycatch was added because while dragging in the calenar  real-time could kick in
+						// and trown an error because DOM has changed but the lib is not aware not it has the capability
 					}
 				}
 
