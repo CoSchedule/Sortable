@@ -1,5 +1,5 @@
 {
-	"name": "@coschedule/sortable",
+	"name": "@coschedule/sortablejs",
 	"exportName": "Sortable",
 	"version": "1.15.0",
 	"devDependencies": {
@@ -32,7 +32,7 @@
 		"Konstantin Lebedev <ibnRubaXa@gmail.com>",
 		"Owen Mills <owen23355@gmail.com>"
 	],
-	"repository": "git://github.com/coschedule/sortable.git",
+	"repository": "git://github.com/coschedule/Sortable.git",
 	"files": [
 		"Sortable.js",
 		"Sortable.min.js",
