@@ -1,5 +1,5 @@
 {
-	"name": "sortablejs",
+	"name": "@coschedule/sortablejs",
 	"exportName": "Sortable",
 	"version": "1.10.2",
 	"devDependencies": {
@@ -52,5 +52,9 @@
 		"vue",
 		"mixin"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	  },
+	  "repository": "git://github.com/coschedule/sortablejs.git"
 }
