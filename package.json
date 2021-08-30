@@ -32,7 +32,7 @@
 		"Konstantin Lebedev <ibnRubaXa@gmail.com>",
 		"Owen Mills <owen23355@gmail.com>"
 	],
-	"repository": "git://github.com/coschedule/sortablejs.git",
+	"repository": "git://github.com/coschedule/sortable.git",
 	"files": [
 		"Sortable.js",
 		"Sortable.min.js",
