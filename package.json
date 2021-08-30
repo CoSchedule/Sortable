@@ -1,7 +1,7 @@
 {
 	"name": "@coschedule/sortablejs",
 	"exportName": "Sortable",
-	"version": "1.10.2",
+	"version": "1.11.0",
 	"devDependencies": {
 		"@babel/core": "^7.4.4",
 		"@babel/plugin-transform-object-assign": "^7.2.0",
@@ -32,10 +32,7 @@
 		"Konstantin Lebedev <ibnRubaXa@gmail.com>",
 		"Owen Mills <owen23355@gmail.com>"
 	],
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/SortableJS/Sortable.git"
-	},
+	"repository": "git://github.com/coschedule/sortablejs.git",
 	"files": [
 		"Sortable.js",
 		"Sortable.min.js",
@@ -55,6 +52,5 @@
 	"license": "MIT",
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com"
-	  },
-	  "repository": "git://github.com/coschedule/sortablejs.git"
+	}
 }
