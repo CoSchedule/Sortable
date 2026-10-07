@@ -1,0 +1,40 @@
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directories: ['/']
+    schedule:
+      interval: weekly
+      day: monday
+    # Majors each get their own PR, so a stuck one can't hold back the rest. The limit leaves
+    # room for them without blocking the weekly group.
+    open-pull-requests-limit: 10
+    # Waiting a few days before taking a new release keeps compromised or yanked packages out.
+    # Security updates skip the wait.
+    cooldown:
+      default-days: 7
+    commit-message:
+      prefix: chore
+      include: scope
+    # This repo has no auto-merge, so a person merges each grouped update.
+    groups:
+      minor-and-patch:
+        applies-to: version-updates
+        update-types: [minor, patch]
+      security:
+        applies-to: security-updates
+        patterns: ['*']
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    cooldown:
+      default-days: 7
+    commit-message:
+      prefix: ci
+      include: scope
+    groups:
+      actions:
+        patterns: ['*']

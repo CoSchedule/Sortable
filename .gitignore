@@ -4,3 +4,12 @@ mock.png
 .build*
 jquery.fn.*
 .idea/
+
+node_modules/
+.env
+.env.local
+.env.*.local
+coverage/
+*.log
+.DS_Store
+.playwright-mcp/
