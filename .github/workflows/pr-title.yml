@@ -1,0 +1,11 @@
+name: PR title
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+jobs:
+  lint-pr-title:
+    uses: CoSchedule/platform/.github/workflows/pr-title.yml@v1
+    permissions:
+      contents: read
