@@ -1,6 +1,8 @@
 * @CoSchedule/engineers
 
-# Dependency manifests have no owner, so Dependabot updates can auto-merge once CI passes.
+# Dependency manifests and workflow files have no owner, so Dependabot's npm and GitHub Actions
+# updates don't request an engineer, and grouped ones can auto-merge once CI passes.
 package.json
 package-lock.json
 pnpm-lock.yaml
+.github/workflows/
